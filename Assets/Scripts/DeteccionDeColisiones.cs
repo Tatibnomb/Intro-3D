@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class DeteccionDeColisiones : MonoBehaviour
 {
-    void OnCollisionEnter()
+    void OnCollisionEnter(Collision col)
     {
         Debug.Log("Contacto");
-        Destroy(gameObject);
+        if (col.gameObject.name == "Player")
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }
