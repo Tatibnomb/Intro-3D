@@ -5,10 +5,12 @@ using UnityEngine;
 public class DeteccionDeColisiones : MonoBehaviour
 {
     public ScoreManager scoreManager;
+    public MercaderiaScript mercaderiaScript;
 
     void Start()
     {
         scoreManager = FindObjectOfType<ScoreManager>();
+        mercaderiaScript = GetComponent<MercaderiaScript>();
     }
 
     void OnCollisionEnter(Collision col)
@@ -17,9 +19,7 @@ public class DeteccionDeColisiones : MonoBehaviour
         if (col.gameObject.name == "Player")
         {
             Destroy(gameObject);
-            scoreManager.AddScore();
-
+            scoreManager.AddScore(mercaderiaScript.scorePoints);
         }
-        
     }
 }

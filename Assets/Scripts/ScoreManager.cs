@@ -19,4 +19,10 @@ public class ScoreManager : MonoBehaviour
         score++;
         uiManager.UpdateScore(score);
     }
+
+    public void AddScore(int scorePoints)
+    {
+        score += scorePoints;
+        uiManager.UpdateScore(score);
+    }
 }
