@@ -6,6 +6,7 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     public TextMeshProUGUI txtScore;
+    public TextMeshProUGUI txtHealthPoints;
 
     // Start is called before the first frame update
     void Start()
@@ -15,5 +16,9 @@ public class UIManager : MonoBehaviour
     public void UpdateScore(int score)
     {
         txtScore.text = score.ToString();
+    }
+    public void UpdateHealth(int health)
+    {
+        txtHealthPoints.text = health.ToString();
     }
 }

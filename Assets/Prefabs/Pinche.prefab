@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 6638196288979472884}
   - component: {fileID: 6070701831174399575}
   - component: {fileID: 54716293604170932}
+  - component: {fileID: 114101338254864700}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Pinche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,3 +109,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114101338254864700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3559960600730715374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01f596e0216e95458a32965a6685826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  mercaderiaScript: {fileID: 0}
