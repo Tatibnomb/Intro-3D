@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 206758182088731666}
   - component: {fileID: 114550352862992362}
+  - component: {fileID: 114932613678858336}
   m_Layer: 0
   m_Name: Caja
   m_TagString: Untagged
@@ -45,6 +46,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scorePoints: 0
+--- !u!114 &114932613678858336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3543375594835133290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01f596e0216e95458a32965a6685826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  mercaderiaScript: {fileID: 0}
 --- !u!54 &5367263548285997887
 Rigidbody:
   m_ObjectHideFlags: 0
