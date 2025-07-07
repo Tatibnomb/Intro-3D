@@ -17,7 +17,7 @@ public class InteractionArea : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (canInteract && mercaderia != null)
+            if (canInteract)
             {
                 Destroy(mercaderia.gameObject);
                 EndInteraction();
