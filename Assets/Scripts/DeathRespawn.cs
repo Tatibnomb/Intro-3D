@@ -19,7 +19,7 @@ public class DeathRespawn : MonoBehaviour
         if (transform.position.y < deathHeight)
         {
             Debug.Log("Respawn");
-            SceneManager.LoadScene("FPS parkour");
+            SceneManager.LoadScene("Input UI Interaction");
         }
     }
 }
