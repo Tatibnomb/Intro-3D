@@ -8,7 +8,6 @@ public class HealthManager : MonoBehaviour
     public int HealthPoints;
     public int maxHealthPoints;
     public UIManager uiManager;
-    public TextMeshProUGUI txtHealthPoints;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +21,7 @@ public class HealthManager : MonoBehaviour
         if (HealthPoints <= damagePoints)
         {
             // Game over
+            HealthPoints = 0;
             return;
         }
         HealthPoints -= damagePoints;

@@ -15,10 +15,10 @@ public class UIManager : MonoBehaviour
     }
     public void UpdateScore(int score)
     {
-        txtScore.text = score.ToString();
+        txtScore.text = "Puntos: " + score;
     }
     public void UpdateHealth(int health)
     {
-        txtHealthPoints.text = health.ToString();
+        txtHealthPoints.text = "Salud: " + health;
     }
 }

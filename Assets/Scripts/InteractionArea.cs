@@ -17,17 +17,26 @@ public class InteractionArea : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && canInteract && mercaderia != null)
         {
-            if (canInteract)
+            DamageObjectScript damage = mercaderia.GetComponent<DamageObjectScript>();
+
+            if (damage != null)
             {
-                Destroy(mercaderia.gameObject);
-                if (scoreManager != null && mercaderia != null)
-                {
-                    scoreManager.AddScore(mercaderia.scorePoints);
-                }
-                EndInteraction();
+                if (damage.healthManager != null)
+                    damage.healthManager.TakeDamage(damage.damagePoints);
+
+                if (scoreManager != null)
+                    scoreManager.AddScore(-damage.damagePoints);
             }
+            else
+            {
+                if (scoreManager != null)
+                    scoreManager.AddScore(mercaderia.scorePoints);
+            }
+
+            Destroy(mercaderia.gameObject);
+            EndInteraction();
         }
     }
 
