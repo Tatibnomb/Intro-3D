@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class MercaderiaScript : MonoBehaviour
 {
-    public int scorePoints;
+    public int scorePoints = 5;
 }

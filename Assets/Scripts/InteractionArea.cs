@@ -7,10 +7,12 @@ public class InteractionArea : MonoBehaviour
     public GameObject UIInteractionMessage;
     public bool canInteract;
     public MercaderiaScript mercaderia;
+    public ScoreManager scoreManager;
 
     private void Start()
     {
         UIInteractionMessage.SetActive(false);
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     private void Update()
@@ -20,6 +22,10 @@ public class InteractionArea : MonoBehaviour
             if (canInteract)
             {
                 Destroy(mercaderia.gameObject);
+                if (scoreManager != null && mercaderia != null)
+                {
+                    scoreManager.AddScore(mercaderia.scorePoints);
+                }
                 EndInteraction();
             }
         }

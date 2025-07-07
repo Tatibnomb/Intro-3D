@@ -506,7 +506,7 @@ PrefabInstance:
     - target: {fileID: 114457538219011038, guid: 25f714df291f1dc42b72f84932f2f114,
         type: 3}
       propertyPath: scorePoints
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3778290047576658883, guid: 25f714df291f1dc42b72f84932f2f114,
         type: 3}
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42859ea158fc6041b13061aadc8ef86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePoints: 15
+  scorePoints: 10
 --- !u!65 &337211877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42859ea158fc6041b13061aadc8ef86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePoints: 5
+  scorePoints: 0
 --- !u!1 &740183848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42859ea158fc6041b13061aadc8ef86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePoints: 0
+  scorePoints: 10
 --- !u!64 &1133674389
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2514,6 +2514,7 @@ MonoBehaviour:
   UIInteractionMessage: {fileID: 1178784370}
   canInteract: 0
   mercaderia: {fileID: 0}
+  scoreManager: {fileID: 0}
 --- !u!135 &1732047444
 SphereCollider:
   m_ObjectHideFlags: 0
