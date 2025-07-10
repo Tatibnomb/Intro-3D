@@ -44,6 +44,17 @@ public class InteractionArea : MonoBehaviour
     {
         Debug.Log(other.gameObject.name);
         mercaderia = other.GetComponent<MercaderiaScript>();
+        DamageObjectScript damage = other.GetComponent<DamageObjectScript>();
+
+        if (damage != null)
+        {
+            if (damage.healthManager != null)
+                damage.healthManager.TakeDamage(damage.damagePoints);
+
+            Destroy(other.gameObject);
+            return;
+        }
+
         if (mercaderia)
         {
             UIInteractionMessage.SetActive(true);
